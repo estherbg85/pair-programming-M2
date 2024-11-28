@@ -2,6 +2,8 @@
 
 
 const btn = document.querySelector('.js_enviar');
+const usuariaInput = document.querySelector('.js_input');
+const paragraph = document.querySelector('.js_paragraph');
 
 btn.addEventListener('click', (ev) => {
 
@@ -9,9 +11,7 @@ btn.addEventListener('click', (ev) => {
 
     const name1 = 'Maria';
     const name2 = 'Luisa';
-
-    const usuaria = document.querySelector('.js_input').value;
-    const paragraph = document.querySelector('.js_paragraph');
+    const usuaria = usuariaInput.value;
 
     if(usuaria === name1 || usuaria === name2) {
 
