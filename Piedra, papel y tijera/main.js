@@ -52,16 +52,16 @@ submit.addEventListener('click', (ev) => {
 
     ev.preventDefault();
 
-    // Declaramos la variable del valor de la opción seleccionada en el formulario
+    // Declaramos la variable del valor de la opción seleccionada por el jugador
 
     const jugada = document.querySelector('.js_jugada').value;
 
-    // Variable en la que se unen la opción de la computadora (piedra, papel o tijera) y el número random
+    // Declaramos la variable con la que juega la computadora
 
     const Computadora = JuegoComputadora();
 
-    // Variable que llama a la variable en la que se comparaba el juego del jugador con el de la computadora (ganado, perdido o empate)
-    
+    // Declaramos la variable con el resultado de llamar a la función arrow en la que se comparaba el juego del jugador con el de la computadora (para saber si se ha ganado, perdido o empatado)
+
     const Result = ResultadoFinal(jugada, Computadora);
 
     // Reflejar en el HTML
